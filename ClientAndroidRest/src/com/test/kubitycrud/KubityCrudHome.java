@@ -25,6 +25,17 @@ public class KubityCrudHome extends Activity {
 			        startActivity(intent);
 			}
 		});
+		
+		Button searchButton= (Button) findViewById(R.id.get_logins);
+		searchButton.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				final Intent intent = new Intent(KubityCrudHome.this,
+			            GetUsersActivity.class);
+			        startActivity(intent);
+			}
+		});
 	}
 
 	@Override
